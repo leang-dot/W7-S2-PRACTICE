@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form with CSS Challenges</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = () => {
+            // Set checkbox to indeterminate state
+            const checkbox = document.getElementById('three-state-checkbox');
+            checkbox.indeterminate = true;
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h2 style="text-align: center;">LOGIN TO YOUR ACCOUNT</h2>
+    </header>
+    <form action="/submit" method="post">
+        <div class="name">
+            <label for="name">Username</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your username">
+        </div>
+        <div class="email">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="password">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- Checkbox with three states -->
+        <div class="checkbox">
+            <input type="checkbox" id="three-state-checkbox">
+            <label for="three-state-checkbox">Remember me!</label>
+        </div>
+
+        <div class="login">
+            <input type="submit" value="Login">
+        </div>
+    </form>
+</body>
+</html>
